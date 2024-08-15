@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title login">Login Form</div>
+        </div>
+        <div class="form-container">
+            <div class="form-inner">
+                <form id="loginForm" role="form">
+                    <!-- <div class="field">
+                        <input type="text" id="userName" placeholder="Username" required>
+                    </div> -->
+                    <div class="field">
+                        <input type="text" id="userEmail"  placeholder="Email Address" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" id="password" placeholder="Password" required>
+                    </div>
+                    <!--<div class="pass-link">
+                        <a href="#">Forgot Password</a>
+                    </div>-->
+                    <div class="field">
+                        <input type="submit" value="Login">
+                    </div>
+                    <div class="signup-link">Not a member?<br>
+                        <a href="Signup.html">Signup Now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+document.getElementById("loginForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const username = document.getElementById("userEmail").value;
+    const password = document.getElementById("password").value;
+
+    const user = localStorage.getItem(username);
+
+    if (user) {
+      const parsedUser = JSON.parse(user);
+      if (parsedUser.password === password) {
+        sessionStorage.setItem('username',parsedUser.name);
+        window.location.href = "../index.html";
+      } else {
+        alert("Incorrect password");
+      }
+    } else {
+      alert("User not found");
+    }
+  });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Collaborative Quiz Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+  <body>
+    
+    <div class="Navbar">
+        <nav class="flex align-center">
+            <a href="index.html"><p><span>Quiz </span>Platform</p></a>
+            <ul>
+              <li class="big-screens">
+                <a href="create-quiz.html">Create Quiz</a>
+                <a href="dashboard.html">DashBoard</a>
+                <a href="./take-quiz.html?id=quiz_1723733536890">Take Quiz</a>
+                <div id="loginbuttons">
+                  <button onclick="window.location.href='LoginSignup/Signup.html';" class="btn register">Register</button>
+                  <button onclick="window.location.href='LoginSignup/login.html';" class="btn login">Log In</button>
+                </div>
+                <div id="showUser"></div>
+              </li>
+            </ul>
+          </nav>
+    </div>
+
+    <div class="container">
+        <h2 >Create Your Quiz</h2>
+        <p>Make a set of Questions you want your friends to play with !</p>
+        <form id="quiz-form">
+            <div id="question-container">
+                <div class="question-item">
+                    <label>Question 1</label>
+                    <input type="text" class="question-text" placeholder="Enter your question" required>
+                    
+                    <label>Answer Options</label>
+                    <input type="text" class="answer-option" placeholder="Option 1" required>
+                    <input type="text" class="answer-option" placeholder="Option 2" required>
+                    <input type="text" class="answer-option" placeholder="Option 3" required>
+                    <input type="text" class="answer-option" placeholder="Option 4" required>
+                    
+                    <label>Correct Answer</label>
+                    <input type="number" class="correct-answer" placeholder="Correct option number (1-4)" required>
+                    <hr>
+                </div>
+            </div>
+            
+            <button type="button" id="add-question">Add Another Question</button>
+           
+            <button type="submit">Save Quiz</button>
+        </form>
+    </div>
+
+    <div class="Footer">
+      <p>© Copyright 2024 Shivam Sharma</p>
+  </div>
+    <script src="./assets/JS/create-quiz.js"></script>
+    <script src="./assets/JS/index.js"></script>
+</body>
+</html>

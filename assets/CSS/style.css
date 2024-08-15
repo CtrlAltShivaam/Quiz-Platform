@@ -1,0 +1,242 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Montserrat", serif;
+  margin: 0;
+  min-height: 20vh;
+}
+
+button,
+.btn {
+  font-family: inherit;
+}
+
+/* CSS RESET ENDS */
+
+/* NAVIGATION BAR */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  padding: 0.25rem 5vw;
+  box-shadow: 0 0 30px lightgray;
+}
+
+nav span {
+  color: #4caf50;
+}
+
+nav p {
+  font-size: 25px;
+  font-weight: 600;
+  cursor: default;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #676767;
+  padding: 0 1rem;
+  transition: 0.1s ease-in-out;
+  font-size: 20px;
+}
+nav a:hover {
+  color: #121212;
+}
+
+nav .btn {
+  padding: 0.5rem 1rem;
+  margin: 0 0 0 0.5rem;
+  border: 1px solid #4caf50;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-size: 17px;
+}
+
+.register {
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #4caf50;
+  border-radius: 5px;
+}
+
+.register:hover {
+  background-color: #3c8c40;
+}
+
+.login {
+  background-color: white;
+  color: #4caf50;
+}
+
+.login:hover {
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #4caf50;
+}
+
+/* NAVIGATION BAR ENDS *:
+/*Footer*/
+.Footer {
+    position:relative;
+    top: 90%;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
+    background-color:#4caf4fa1;
+    color: white;
+    text-align: center;
+  }
+
+/* MEDIA QUERIES - RESPONSIVE LAYOUT */
+
+/* DESKTOP - LAPTOP - TABLET */
+@media screen and (min-width: 850px){
+  nav .small-screens {
+    display: none;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 850px){
+  nav{
+    padding: 1rem 5vw;
+  }
+  
+  nav .small-screens i{
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+}
+
+/* MEDIA QUERIES ENDS*/
+
+
+/* LANDING PAGE CSS */
+
+.HomeScreen{
+    text-align: left;
+    margin: 80px 50px 80px 120px;
+}
+.HomeScreen h3{
+    margin-top: 30px;
+}
+.HomeScreen button{
+    margin-top: 30px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #4caf50;
+    border-radius: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-size: 17px;
+
+}
+.HomeScreen button:hover {
+    background-color: #4caf50;
+    color: white;
+    border: 1px solid #46a049;
+  }
+
+
+  
+
+/*  Create - Quizz */
+
+.quiz-container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container p {
+  text-align: center;
+  color: #333;
+}
+
+.question-block {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#quiz-form{
+  display: inline;
+}
+#quiz-form button,.TakeQuizSection button {
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+  background-color:#4caf4fd7;
+  color: #fff;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #256628;
+}
+
+.TakeQuizSection,.Quiz-scores{
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container h2, 
+.TakeQuizSection h2,p{
+  margin-top: 20px;
+  text-align: center;
+}
+.TakeQuizSection input{
+  width: 600px;
+}
+.TakeQuizSection p,buttons{
+ text-align: center;
+}
+.selected {
+  background-color: #cce7ff; /* Light blue background */
+  border: 2px solid #0056b3; /* Dark blue border */
+}
+
+.Quiz-scores #scores-table{
+ padding: 20px;
+}
