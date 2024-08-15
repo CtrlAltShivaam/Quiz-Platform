@@ -200,7 +200,7 @@ select {
 #quiz-form{
   display: inline;
 }
-#quiz-form button,.TakeQuizSection button {
+#quiz-form button,.TakeQuizSection button,.thank-you .btn {
   margin-top: 10px;
   text-align: center;
   padding: 10px;
@@ -215,7 +215,7 @@ button:hover {
   background-color: #256628;
 }
 
-.TakeQuizSection,.Quiz-scores{
+.TakeQuizSection,.Quiz-scores,.thank-you{
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
@@ -239,4 +239,10 @@ button:hover {
 
 .Quiz-scores #scores-table{
  padding: 20px;
+}
+
+.backtoHomepage{
+  padding: auto;
+  margin: auto;
+  text-align: center;
 }
